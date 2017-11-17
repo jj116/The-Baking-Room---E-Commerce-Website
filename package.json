@@ -1,0 +1,33 @@
+{
+  "name": "the-baking-room",
+  "version": "1.0.0",
+  "description": "Food E-Commerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jj116/The-Baking-Room---E-Commerce-Website.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Samarth Bharti",
+  "contributors": [
+    "Sushant Bansal <sb577@snu.edu.in>",
+    "Jaison Jose <jj116@snu.edu.in>",
+    "Ahana Raghuvanshi <ar980@snu.edu.in>",
+    "Adita Kapoor <ak622@snu.edu.in>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
