@@ -5,6 +5,7 @@
 	<title>The Baking Room</title>
 	<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
 	<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="/css/animat/animate.min.css" />
 	<link rel="stylesheet" href="/css/fancybox/jquery.fancybox.css" />
@@ -13,10 +14,10 @@
 	<link rel="stylesheet" href="/css/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="/css/owl-carousel/owl.theme.css" />
 	<link rel="stylesheet" href="/css/owl-carousel/owl.transitions.css">
-
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="/css/responsive.css" />
-	<script>
+	<link rel="stylesheet" href="/css/odometer-theme-train-station.css" />
+	<!-- <script>
 	var cus=97;
 	var ord=323;
 	var fis=422;
@@ -40,7 +41,7 @@
 
 		}
 	}
-	</script>
+	</script> -->
 </head>
 <body>
 
@@ -118,28 +119,28 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;">
-				<script type="text/javascript">
+				<!-- <script type="text/javascript">
 				   load_num();
-				</script>
+				</script> -->
 		<div class="container">
 			<div class="row">
 				<div class="features_content text-center">
 					<div class="col-md-4">
 						<div class="sinle_features wow slideInUp" data-wow-duration="1s">
-							<h1 id="sat_custom" style="color:white;">0</h1>
-							<h4 style="color:white;">Happy Customers</h4>
+							<div id="odometer" class="odometer" style="font-size: 60px;">000</div>
+							<h4 style="color:white;font-size: 35px; font-family: 'Vollkorn SC', serif;">Happy Customers</h4>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="sinle_features wow slideInUp" data-wow-duration="1.5s">
-							<h1 id="sat_order" style="color:white;">0</h1>
-							<h4 style="color:white;">Orders Recieved</h4>
+							<div id="odometer2" class="odometer" style="font-size: 60px;">000</div>
+							<h4 style="color:white;font-size: 35px; font-family: 'Vollkorn SC', serif;">Orders Received</h4>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="sinle_features wow slideInUp" data-wow-duration="2s">
-							<h1 id="sat_store" style="color:white;">0</h1>
-							<h4 style="color:white;">Footfall in Store</h4>
+							<div id="odometer3" class="odometer" style="font-size: 60px;">000</div>
+							<h4 style="color:white;font-size: 35px; font-family: 'Vollkorn SC', serif;">Total Footfall</h4>
 						</div>
 					</div>
 				</div>
@@ -514,20 +515,24 @@
 	</div>
 
 	<script type="text/javascript" src="/js/jquery/jquery.js"></script>
-
 	<script type="text/javascript" src="/js/script.js"></script>
-
 	<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
-
 	<script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js"></script>
-
 	<script type="text/javascript" src="/js/nivo-lightbox/nivo-lightbox.min.js"></script>
-
 	<script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>
-
-
-
+	<script src="/js/odometer.min.js"></script>
 	<script type="text/javascript" src="/js/jquery-easing/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/js/wow/wow.min.js"></script>
+	<script type="text/javascript">
+		setTimeout(function(){
+    		odometer.innerHTML = 3500;
+		}, 3000);
+		setTimeout(function(){
+    		odometer2.innerHTML = 9854;
+		}, 3000);
+		setTimeout(function(){
+    		odometer3.innerHTML = 20087;
+		}, 3000);
+	</script>
 </body>
 </html>
