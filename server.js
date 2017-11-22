@@ -1,14 +1,6 @@
-const express = require('express')
-const app = express()
-
-app.use(express.static('public'));
-
-app.set('view engine', 'ejs')
-
-app.get('/', function (req, res) {
-  res.render('index');
-})
-
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
-})	
+var port = 1337;
+var express = require('./config/express');
+var app = express();
+app.listen(port);
+module.exports = app;
+console.log('Server running at http://localhost:' + port);
