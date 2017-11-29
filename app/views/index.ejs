@@ -21,7 +21,14 @@
 	<link rel="stylesheet" href="/css/odometer-theme-train-station.css" />
 </head>
 <body>
-
+	<% if ( user ) { %>
+	    <h2>Hello <%=user%> </h2>
+	    <a href="/logout">Logout</a>
+	<% } else { %>
+		<h2>Hello Guest </h2>
+	    <a href="/register">Register</a>
+	    <a href="/login">Login</a>
+	<% } %>
 
 	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 	<header id="home" class="header">
