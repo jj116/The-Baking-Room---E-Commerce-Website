@@ -1,5 +1,6 @@
-var mongoose = require('mongoose'),
-    crypto = require('crypto'),
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+var crypto = require('crypto'),
     Schema = mongoose.Schema;
 
 var UserSchema = new Schema({

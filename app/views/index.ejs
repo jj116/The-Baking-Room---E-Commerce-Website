@@ -21,17 +21,9 @@
 	<link rel="stylesheet" href="/css/odometer-theme-train-station.css" />
 </head>
 <body>
-	<% if ( user ) { %>
-	    <h2>Hello <%=user%> </h2>
-	    <a href="/logout">Logout</a>
-	<% } else { %>
-		<h2>Hello Guest </h2>
-	    <a href="/register">Register</a>
-	    <a href="/login">Login</a>
-	<% } %>
-
 	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 	<header id="home" class="header">
+		
 		<div class="main_menu_bg navbar-fixed-top wow slideInDown" data-wow-duration="1s">
 			<div class="container">
 				<div class="row">
@@ -52,7 +44,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-left">
-								<li class="active"><a><h5 style="font-family: 'Shadows Into Light', cursive;font-size: 40px;">The Baking Room</h5></a></li>
+								<li class="active"><a><h5 style="font-family: 'Shadows Into Light', cursive;font-size: 30px;">The Baking Room</h5></a></li>
 							</ul>
 						  <ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="#home">Home</a></li>
@@ -61,7 +53,14 @@
 							<li><a href="#menus">Menu</a></li>
 							<li><a href="#order_online">Order Online</a></li>
 							<li><a href="#footer">Contact Us</a></li>
-
+							<% if ( user ) { %>
+							<li><a href="#">Hello <%= user %></a></li> 
+							<li><a href="/logout">Logout</a></li>
+							<% } else { %>
+							<li><a href="/login">Login</a></li>
+							<li><a href="/register">SignUp</a></li>
+							<% } %>
+							
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
@@ -86,7 +85,6 @@
 							<div class="separetor"></div>
 						</div>
 					</div>
-
 
 					<div class="scrolldown">
 						<a href="#features" class="scroll_btn"></a>

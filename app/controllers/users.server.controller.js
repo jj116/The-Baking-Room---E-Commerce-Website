@@ -26,7 +26,7 @@ var getErrorMessage = function(err) {
 exports.renderLogin = function(req, res, next) {
     if (!req.user) {
         res.render('login', {
-            title: 'Log-in Form',
+            title: 'TBR | Login',
             messages: req.flash('error') || req.flash('info')
         });
     }
@@ -38,7 +38,7 @@ exports.renderLogin = function(req, res, next) {
 exports.renderRegister = function(req, res, next) {
     if (!req.user) {
         res.render('register', {
-            title: 'Register Form',
+            title: 'TBR | Register',
             messages: req.flash('error')
         });
     }

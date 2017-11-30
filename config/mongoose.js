@@ -2,7 +2,11 @@ var config = require('./config'),
     mongoose = require('mongoose');
 
 module.exports = function() {
-    var db = mongoose.connect(config.db);
+	var options = {
+	  useMongoClient: true,
+	  promiseLibrary: require('bluebird')
+	};
+    var db = mongoose.connect(config.db, options);
     require('../app/models/user.server.model');
     return db;
 };
