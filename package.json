@@ -2,12 +2,12 @@
   "name": "the-baking-room",
   "version": "1.0.0",
   "description": "Food E-Commerce",
-  "scripts": {
-    "start": "node server.js"
-  },
   "engines": {
     "node": "8.9.1",
     "npm":"5.5.1"
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -44,5 +44,4 @@
   },
   "homepage": "https://github.com/jj116/The-Baking-Room---E-Commerce-Website#readme",
   "main": "server.js",
-  "devDependencies": {},
 }
