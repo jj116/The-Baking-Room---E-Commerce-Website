@@ -86,7 +86,7 @@
 						</div>
 					</div>
 
-					<div class="scrolldown">
+					<div class="scrolldown" id="basic-waypoint">
 						<a href="#features" class="scroll_btn"></a>
 					</div>
 				</div>
@@ -503,18 +503,18 @@
 	<script type="text/javascript" src="/js/nivo-lightbox/nivo-lightbox.min.js"></script>
 	<script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>
 	<script src="/js/odometer.min.js"></script>
+	<script src="/js/jquery.waypoints.js"></script>
 	<script type="text/javascript" src="/js/jquery-easing/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/js/wow/wow.min.js"></script>
 	<script type="text/javascript">
-		setTimeout(function(){
-    		odometer.innerHTML = 3500;
-		}, 3000);
-		setTimeout(function(){
-    		odometer2.innerHTML = 9854;
-		}, 3000);
-		setTimeout(function(){
-    		odometer3.innerHTML = 20087;
-		}, 3000);
+		var waypoint = new Waypoint({
+		  element: document.getElementById('basic-waypoint'),
+		  handler: function() {
+		    odometer.innerHTML = 3500;
+		    odometer2.innerHTML = 9854;
+		    odometer3.innerHTML = 20087;
+		  }
+		});
 	</script>
 </body>
 </html>
