@@ -9,5 +9,6 @@ module.exports = function() {
     var db = mongoose.connect(config.db, options);
     require('../app/models/user.server.model');
     require('../app/models/glob.products.model');
+    require('../app/models/glob.orders.model');
     return db;
 };

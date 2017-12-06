@@ -3,8 +3,7 @@ var Product = require('mongoose').model('Product');
 exports.render = function(req, res) {
 	Product.find({}, function(err, prods) {
 	    if (err) {
-	    	console.log("error");
-	        return next(err);
+	    	return next(err);
 	    }
 	    else{
 	    	res.render('index', {
