@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>The Baking Room</title>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/animat/animate.min.css" />
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="css/themes/default/default.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.transitions.css">
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery-easing/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/wow/wow.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+  <style>
+	.wrapper {
+	height: 420px;
+	width: 654px;
+	margin: 50px auto;
+	border-radius: 7px 7px 7px 7px;
+	-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+	float: left;
+	height: 420px;
+	width: 327px;
+}
+
+.product-img img {
+	border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+	float: left;
+	height: 420px;
+	width: 327px;
+	border-radius: 0 7px 10px 7px;
+	background-color: #ffffff;
+}
+
+.product-text {
+	height: 300px;
+	width: 327px;
+}
+
+.product-text h1 {
+	margin: 0 0 0 38px;
+	padding-top: 52px;
+	font-size: 34px;
+	color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+	font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+	margin: 0 0 47px 38px;
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	letter-spacing: 0.2em;
+}
+
+.product-text p {
+	height: 125px;
+	margin: 0 0 0 38px;
+	font-family: 'Playfair Display', serif;
+	color: #8d8d8d;
+	line-height: 1.7em;
+	font-size: 15px;
+	font-weight: lighter;
+	overflow: hidden;
+}
+
+.product-price-btn {
+	height: 103px;
+	width: 327px;
+	margin-top: 17px;
+	position: relative;
+}
+
+.product-price-btn p {
+	display: inline-block;
+	position: absolute;
+	top: -13px;
+	height: 50px;
+	font-family: 'Trocchi', serif;
+	margin: 0 0 0 38px;
+	font-size: 28px;
+	font-weight: lighter;
+	color: #474747;
+}
+
+span {
+	display: inline-block;
+	height: 50px;
+	font-family: 'Suranna', serif;
+	font-size: 34px;
+}
+
+.product-price-btn button {
+	float: right;
+	display: inline-block;
+	height: 50px;
+	width: 176px;
+	margin: 0 40px 0 16px;
+	box-sizing: border-box;
+	border: transparent;
+	border-radius: 60px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	background-color: #9cebd5;
+	cursor: pointer;
+	outline: none;
+}
+
+.product-price-btn button:hover {
+	background-color: #79b0a1;
+}
+
+    /*######################################################################################*/
+    .square-flip{
+      -webkit-perspective: 1000;
+      -moz-perspective: 1000;
+      -ms-perspective: 1000;
+      perspective: 1000;
+
+      -webkit-transform: perspective(1000px);
+      -moz-transform: perspective(1000px);
+      -ms-transform: perspective(1000px);
+      transform: perspective(1000px);
+
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+
+      /*border:1px solid #efefef;*/
+
+      position:relative;
+      float:left;
+      margin:20px;
+
+      }
+      .square-flip{
+        width:400px;
+        height:400px;
+      }
+      .square,.square2{
+        width:100%;
+        height:100%;
+      }
+      .square{
+
+        background-size: cover;
+        background-position:center center;
+
+        -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+        overflow: hidden;
+
+        position:absolute;
+        top:0;
+
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .square-flip .square{
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+        z-index:1;
+      }
+      .square-flip:hover .square{
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        transform-style: preserve-3d;
+      }
+
+
+      .square2{
+
+        background-size: cover;
+        background-position:center center;
+
+        -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+        overflow: hidden;
+
+        position:absolute;
+        top:0;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .square-flip .square2{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        z-index:1;
+      }
+      .square-flip:hover .square2{
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+      }
+
+      /*Square content*/
+      .square-container{
+        padding:40px;
+        text-align:center;
+        position:relative;
+        top:50%;
+
+        -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+
+
+        -webkit-transform: translateY(-50%) translateX(0px)  scale(1);
+        -ms-transform: translateY(-50%) translateX(0px)  scale(1);
+      transform: translateY(-50%) translateX(0px)  scale(1);
+        transform-style: preserve-3d;
+        z-index:2;
+      }
+      .square-flip:hover .square-container{
+
+        -webkit-transform: translateY(-50%) translateX(-650px)  scale(.88);
+        -ms-transform: translateY(-50%) translateX(-650px)  scale(.88);
+        transform: translateY(-50%) translateX(-650px)  scale(.88);
+        transform-style: preserve-3d;
+
+      }
+
+      .square-container2{
+        padding:40px;
+        text-align:center;
+        position:relative;
+        top:50%;
+
+        -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+            -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+
+
+        -webkit-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+        -ms-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+        transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+
+        transform-style: preserve-3d;
+        z-index:2;
+      }
+      .square-flip:hover .square-container2{
+
+        -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+        -ms-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+        transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+        transform-style: preserve-3d;
+      }
+
+      /*Style text*/
+      .square-flip h2{
+        color:white;
+        font-family: "Open Sans";
+        font-weight:700;
+        font-size:22px;
+      }
+      .square-flip h3{
+        color:white;
+        font-family: "Open Sans";
+        font-weight:500;
+        font-size:16px;
+        line-height:26px;
+      }
+      /*Elements*/
+      .flip-overlay{
+        display:block;
+        background:rgba(0,0,0,0.5);
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+      }
+      .align-center{
+        margin:0 auto;
+      }
+      .kallyas-button{
+        display:block;
+        width:160px;
+        padding:18px 30px;
+        font-family:"Open Sans";
+        font-weight:600;
+        color:#fff;
+        background:#FF2024;
+        margin:0 auto;
+        border-radius:2px;
+        text-decoration:none;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa067+0,ff2959+49,ff2024+100 */
+        background: #DCDCDC; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #DCDCDC 0%, #ff2959 49%, #ff2024 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #DCDCDC 0%,#ff2959 49%,#ff2024 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #DCDCDC 0%,#ff2959 49%,#ff2024 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DCDCDC', endColorstr='#ff2024',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+
+
+      /*ADD SHADOWS OPTIONAL*/
+      .square-flip .square .boxshadow, .square-flip .square .textshadow, .square-flip .square2 .boxshadow, .square-flip .square2 .textshadow{
+        -ms-transition: 0.60s;
+            transition: 0.60s;
+            -webkit-transition: 0.60s;
+      }
+
+      .square-flip .square .boxshadow{
+        -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+        -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+        box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      }
+      .square-flip .square .textshadow{
+        -webkit-text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+        -moz-text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+        text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      }
+      .square-flip:hover .square .boxshadow, .square-flip:hover .square .textshadow{
+        -webkit-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+        -moz-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+        box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      }
+
+
+      .square-flip .square2 .boxshadow{
+        -webkit-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+        -moz-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+        box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      }
+      .square-flip .square2 .textshadow{
+        -webkit-text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+        -moz-text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+        text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      }
+      .square-flip:hover .square2 .boxshadow, .square-flip:hover .square2 .textshadow{
+        -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+        -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+        box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      }
+
+
+      /*You can delete this style*/
+      .centerflipcards{
+        display:block;
+        width:1330px;
+        height:440px;
+        text-align:center;
+        margin:0 auto;
+        margin-top:25px;
+      }
+      .clearfix{clear:both;}
+      .centerflipcards p{
+        font-family:"Open Sans";
+        font-size:13px;
+        margin-top:10px;
+        font-weight:700;
+      }
+      /*######################################################################################*/
+  </style>
+	<script>
+	jQuery(document).ready(function($) {
+  //Count nr. of square classes
+  var countSquare = $(".square").length;
+
+  //For each Square found add BG image
+  for (i = 0; i < countSquare; i++) {
+    var firstImage = $(".square").eq([i]);
+    var secondImage = $(".square2").eq([i]);
+
+    var getImage = firstImage.attr("data-image");
+    var getImage2 = secondImage.attr("data-image");
+
+    firstImage.css("background-image", "url(" + getImage + ")");
+    secondImage.css("background-image", "url(" + getImage2 + ")");
+  }
+});
+
+	</script>
+</head>
+<body>
+	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+	<header id="home" class="header">
+		<div class="main_menu_bg navbar-fixed-top wow slideInDown" data-wow-duration="1s">
+			<div class="container">
+				<div class="row">
+					<div class="nave_menu">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="/"><h5>The Baking Room</h5></a></li>
+							<li class="active"><a href="/ecomm">Home</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/pasteries">Pasteries</a></li>
+                  <li><a href="/cakes">Cakes</a></li>
+                  <li><a href="/choc">Chocolates</a></li>
+                </ul>
+              </li>
+							<li><a href="https://thebakingroom-188121.firebaseapp.com" target="_blank">Live Chat</a></li>
+              <li><a href="/recipies">Recipies</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="/cartt">
+                  <span style="float:left;"><p id="number">0</p></span>
+                  <img src="images/cart.png" style="height:20px; width:30p;"></img>
+                </a>
+              </li>
+							<% if ( user ) { %>
+							<li><a href="#">Hello <%= user %></a></li>
+							<li><a href="/logout">Logout</a></li>
+							<% } else { %>
+							<li><a href="/login">Login</a></li>
+							<li><a href="/register">SignUp</a></li>
+							<% } %>
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+					</div>
+				</div><!--End of row -->
+
+			</div><!--End of container -->
+
+		</div>
+	</header> <!--End of header -->
+  <div id="home_ecom" class="show">
+  <center>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" margin-top: 100px;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" style="margin-top:15px;">
+          <img src="images/c1.jpg" width="620px" height="330px" alt="jokes 1" >
+          <center>
+            <h3>Chocolate Brownie</h3>
+            <p>Rich Dense chocolate brownie with flaked choco-chips.</p>
+          </center>
+        </div>
+
+        <div class="item" style="margin-top:15px;">
+          <img src="images/c2.jpg" width="620px" height="330px" alt="jokes 2" >
+          <center>
+           <h3>Berry Cheese Cake</h3>
+           <p>Good old cheesecake with an overdose of exotic berries.</p>
+          </center>
+        </div>
+
+        <div class="item" style="margin-top:15px;">
+          <img src="images/c3.jpg" width="620px" height="330px" alt="jokes 3" >
+          <center>
+           <h3>BlackBerry Gelato</h3>
+           <p>Creamy Iced Gelato with hue of BlackBerry.</p>
+         </center>
+        </div>
+
+        <div class="item" style="margin-top:15px;">
+          <img src="images/c4.jpg" width="620px" height="330px" alt="jokes 3" >
+          <center>
+           <h3>Fruit Cake</h3>
+           <p>Fruits on on a base of chocolate pastery.</p>
+         </center>
+        </div>
+
+        <div class="item" style="margin-top:15px;">
+          <img src="images/c5.jpg" width="620px" height="330px" alt="jokes 3" >
+          <center>
+           <h3>Caramel Chocolate</h3>
+           <p>Chocolates with caramel and rasberry filling.</p>
+         </center>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </center>
+		<br>
+		<br>
+		<br>
+		<h5 style="color:#585858; margin-left:30px;"> Popular Categories<h5>
+		<hr>
+		<div class="centerflipcards">
+			<div class="square-flip">
+				<div class='square' data-image="https://images7.alphacoders.com/333/333634.jpg">
+					<div class="square-container">
+						<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas.png" class="boxshadow" alt=""></div>
+						<h2 class="textshadow">CAKES</h2>
+					</div>
+					<div class="flip-overlay"></div>
+				</div>
+				<div class='square2' data-image="http://8-themes.com/wp-content/uploads/2015/11/Food___Cakes_and_Sweet_____Three-layer_cake_087268_.jpg">
+					<div class="square-container2">
+						<div class="align-center"></div>
+						<a href="/cakes" target="_blank" class="boxshadow kallyas-button">Explore</a>
+					</div>
+					<div class="flip-overlay"></div>
+				</div>
+			</div>
+
+	<div class="square-flip">
+		<div class='square' data-image="http://www.spyderonlines.com/images/cake_leaves_pastries_delicious_71470.jpg">
+			<div class="square-container">
+				<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas.png" class="boxshadow" alt=""></div>
+				<h2 class="textshadow">PASTERIES</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' data-image="https://hdwallsource.com/img/2014/5/birthday-cakes-6376-6568-hd-wallpapers.jpg">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<a href="/pasteries" target="_blank" class="boxshadow kallyas-button">Explore</a>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+
+	<div class="square-flip">
+		<div class='square' data-image="http://cdn2.bigcommerce.com/server1500/rxdwg0om/product_images/uploaded_images/dark-chocolate.jpg">
+			<div class="square-container">
+				<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas.png" class="boxshadow" alt=""></div>
+				<h2 class="textshadow">CHOCOLATES</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' data-image="https://images8.alphacoders.com/358/358865.jpg">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<a href="/choc" target="_blank" class="boxshadow kallyas-button">Explore</a>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<h5 style="color:#585858; margin-left:30px;">Recommended for you<h5>
+<hr>
+<div>
+  <div class="card-container" style="float:left; margin-left: 70px;">
+  <div class="card u-clearfix">
+  <div class="wrapper">
+    <div class="product-img">
+      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Harvest Vase</h1>
+        <h2>by studio and friends</h2>
+        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+      </div>
+      <div class="product-price-btn">
+        <p><span>78</span>$</p>
+        <button type="button">buy now</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card-container" style="float:left; margin-left: 70px;">
+<div class="card u-clearfix">
+  <div class="wrapper">
+      <div class="product-img">
+        <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Harvest Vase</h1>
+          <h2>by studio and friends</h2>
+          <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+        </div>
+        <div class="product-price-btn">
+          <p><span>78</span>$</p>
+          <button type="button">buy now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div>
+  <div class="card-container" style="float:left; margin-left: 70px;">
+  <div class="card u-clearfix">
+  <div class="wrapper">
+    <div class="product-img">
+      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Harvest Vase</h1>
+        <h2>by studio and friends</h2>
+        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+      </div>
+      <div class="product-price-btn">
+        <p><span>78</span>$</p>
+        <button type="button">buy now</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card-container" style="float:left; margin-left: 70px;">
+<div class="card u-clearfix">
+  <div class="wrapper">
+      <div class="product-img">
+        <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Harvest Vase</h1>
+          <h2>by studio and friends</h2>
+          <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+        </div>
+        <div class="product-price-btn">
+          <p><span>78</span>$</p>
+          <button type="button">buy now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+<hr>
+	<footer id="footer" class="footer" style="margin-top:1100px;">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-5 col-sm-offset-8 col-xs-10 col-xs-offset-2">
+					<div class="contact_area wow slideInLeft" data-wow-duration="2s">
+						<div class="head_title text-center">
+							<h2>Contact</h2>
+							<div class="separetor"></div>
+						</div>
+
+						<div class="main_contact_content">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="single_contact text-left">
+										<h5>The Baking Room</h5>
+										<span><h6>In the middle of Nowehere,</h6></span>
+										<span><h6>Yet at the centre of your heart</h6></span>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="single_contact text-left">
+										<h5>Reservations</h5>
+										<span><h6>res@thebakingroom.com</h6></span>
+										<span><h6>+91 9999999999</h6></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="sinle_features wow slideInUp" data-wow-duration="2s">
+								<div class="form_btn_area text-center">
+									<a href="https://thebakingroom-188121.firebaseapp.com/" class="btn" target="_blank">Join the live Chat!</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="copyright_text_area">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_footer text-right wow zoomIn" data-wow-duration="2s">
+							<p>Made with <i class="fa fa-heart"></i> by The Baking Room. All Rights Reserved</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_footer text-right">
+
+							<div class="footer_socail wow zoomIn" data-wow-duration="1.5s">
+								<a href=""><i class="fa fa-facebook"></i></a>
+								<a href=""><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="scrollup">
+		<a href="#"><i class="fa fa-chevron-up"></i></a>
+	</div>
+</body>
+</html>

@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 var OrderSchema = new Schema({
     oid: Number,
     uname: String,
-    pid: []
+    pid: [Number]
 });
 
 mongoose.model('Order', OrderSchema);
