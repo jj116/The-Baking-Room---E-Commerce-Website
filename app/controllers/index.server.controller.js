@@ -1,6 +1,22 @@
+var Product = require('mongoose').model('Product');
+
 exports.render = function(req, res) {
-    res.render('index', {
-    	title: 'The Baking Room',
-    	user: req.user ? req.user.username : ''
-    });
+	Product.find({}, function(err, prods) {
+	    if (err) {
+	    	console.log("error");
+	        return next(err);
+	    }
+	    else{
+	    	console.log(prods);
+	      	res.render('index', {
+    		title: 'The Baking Room',
+    		list:prods,
+    		user: req.user ? req.user.username : ''
+    		});
+	    }
+	});
 };
+
+
+
+

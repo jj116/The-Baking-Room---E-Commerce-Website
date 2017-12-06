@@ -1,5 +1,5 @@
-var config = require('./config'),
-    mongoose = require('mongoose');
+var config = require('./config');
+var mongoose = require('mongoose');
 
 module.exports = function() {
 	var options = {
@@ -8,5 +8,6 @@ module.exports = function() {
 	};
     var db = mongoose.connect(config.db, options);
     require('../app/models/user.server.model');
+    require('../app/models/glob.products.model')
     return db;
 };
