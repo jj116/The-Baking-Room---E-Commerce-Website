@@ -234,128 +234,40 @@
 	</section><!-- End of Abouts Section -->
 	<div>
 	<div>
+		<% for(var i=0; i < list.length ; i++) { %>
 		<div class="card-container" style="float:left; margin-left: 70px;">
 	  <div class="card u-clearfix">
 	    <div class="card-body">
+		
 	      <span class="card-number card-circle subtle">01</span>
 	      <span class="card-author subtle">John Smith</span>
-	      <h2 class="card-title">New Brunch Recipe</h2>
-	      <span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
+	      <h2 class="card-title"><%= list[i].Name %></h2>
+	      <span class="card-description subtle"><%= list[i].Description %></span>
 	      <div class="card-read">Purchase</div>
-	      <span class="card-tag card-circle subtle">C</span>
+	      <span class="card-tag card-circle subtle"><%= list[i].Cost %></span>
 	    </div>
-	    <img src="https://78.media.tumblr.com/6f37adbc97e2abffed5b79c5595d424b/tumblr_opevsdLMtB1shjq15o1_500.jpg" alt="" class="card-media" height="360" width="275"/>
+	    <img src='<%= list[i].Images %>' alt="" class="card-media" height="360" width="275"/>
 	  </div>
 	  <div class="card-shadow"></div>
 	</div>
+	
 	<div class="card-container" style="float:right; margin-right: 70px;">
 	<div class="card u-clearfix">
 		<div class="card-body">
 			<span class="card-number card-circle subtle">01</span>
 			<span class="card-author subtle">John Smith</span>
-			<h2 class="card-title">New Brunch Recipe</h2>
-			<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
+			<h2 class="card-title"><%= list[i].Name %></h2>
+			<span class="card-description subtle"><%= list[i].Description %></span>
 			<div class="card-read">Purchase</div>
-			<span class="card-tag card-circle subtle">C</span>
+			<span class="card-tag card-circle subtle"><%= list[i].Cost %></span>
 		</div>
-		<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
+		<img src='<%= list[i].Images %>' alt="" class="card-media" />
 	</div>
 	<div class="card-shadow"></div>
 	</div>
 </div>
-<div>
-	<div class="card-container" style="float:left; margin-left: 70px;">
-	<div class="card u-clearfix">
-		<div class="card-body">
-			<span class="card-number card-circle subtle">01</span>
-			<span class="card-author subtle">John Smith</span>
-			<h2 class="card-title">New Brunch Recipe</h2>
-			<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-			<div class="card-read">Purchase</div>
-			<span class="card-tag card-circle subtle">C</span>
-		</div>
-		<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-	</div>
-	<div class="card-shadow"></div>
-</div>
-<div class="card-container" style="float:right; margin-right: 70px;">
-<div class="card u-clearfix">
-	<div class="card-body">
-		<span class="card-number card-circle subtle">01</span>
-		<span class="card-author subtle">John Smith</span>
-		<h2 class="card-title">New Brunch Recipe</h2>
-		<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-		<div class="card-read">Purchase</div>
-		<span class="card-tag card-circle subtle">C</span>
-	</div>
-	<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-</div>
-<div class="card-shadow"></div>
-</div>
-</div>
+<% } %>
 
-<div>
-	<div class="card-container" style="float:left; margin-left: 70px;">
-	<div class="card u-clearfix">
-		<div class="card-body">
-			<span class="card-number card-circle subtle">01</span>
-			<span class="card-author subtle">John Smith</span>
-			<h2 class="card-title">New Brunch Recipe</h2>
-			<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-			<div class="card-read">Purchase</div>
-			<span class="card-tag card-circle subtle">C</span>
-		</div>
-		<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-	</div>
-	<div class="card-shadow"></div>
-</div>
-<div class="card-container" style="float:right; margin-right: 70px;">
-<div class="card u-clearfix">
-	<div class="card-body">
-		<span class="card-number card-circle subtle">01</span>
-		<span class="card-author subtle">John Smith</span>
-		<h2 class="card-title">New Brunch Recipe</h2>
-		<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-		<div class="card-read">Purchase</div>
-		<span class="card-tag card-circle subtle">C</span>
-	</div>
-	<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-</div>
-<div class="card-shadow"></div>
-</div>
-</div>
-
-<div>
-	<div class="card-container" style="float:left; margin-left: 70px;">
-	<div class="card u-clearfix">
-		<div class="card-body">
-			<span class="card-number card-circle subtle">01</span>
-			<span class="card-author subtle">John Smith</span>
-			<h2 class="card-title">New Brunch Recipe</h2>
-			<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-			<div class="card-read">Purchase</div>
-			<span class="card-tag card-circle subtle">C</span>
-		</div>
-		<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-	</div>
-	<div class="card-shadow"></div>
-</div>
-<div class="card-container" style="float:right; margin-right: 70px;">
-<div class="card u-clearfix">
-	<div class="card-body">
-		<span class="card-number card-circle subtle">01</span>
-		<span class="card-author subtle">John Smith</span>
-		<h2 class="card-title">New Brunch Recipe</h2>
-		<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-		<div class="card-read">Purchase</div>
-		<span class="card-tag card-circle subtle">C</span>
-	</div>
-	<img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-</div>
-<div class="card-shadow"></div>
-</div>
-</div>
-</div>
 <hr>
 	<footer id="footer" class="footer" style="margin-top:1800px;">
 		<div class="container">

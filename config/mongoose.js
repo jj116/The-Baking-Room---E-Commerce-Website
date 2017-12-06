@@ -10,5 +10,6 @@ module.exports = function() {
     require('../app/models/user.server.model');
     require('../app/models/glob.products.model');
     require('../app/models/glob.orders.model');
+	require('../app/models/glob.recipes.model');
     return db;
 };
