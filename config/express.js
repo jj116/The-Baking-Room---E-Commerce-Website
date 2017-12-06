@@ -34,6 +34,7 @@ module.exports = function() {
     require('../app/routes/pasteries.server.routes.js')(app);
     require('../app/routes/cakes.server.routes.js')(app);
     require('../app/routes/recipies.server.routes.js')(app);
+    
     app.use(express.static('./public'));
 
     return app;
