@@ -9,4 +9,4 @@ var OrderSchema = new Schema({
     pid: []
 });
 
-mongoose.model('Product', ProductSchema);
+mongoose.model('Order', OrderSchema);
