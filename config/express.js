@@ -29,7 +29,11 @@ module.exports = function() {
 
     require('../app/routes/index.server.routes.js')(app);
     require('../app/routes/users.server.routes.js')(app);
-
+    require('../app/routes/ecomm.server.routes.js')(app);
+    require('../app/routes/choc.server.routes.js')(app);
+    require('../app/routes/pasteries.server.routes.js')(app);
+    require('../app/routes/cakes.server.routes.js')(app);
+    require('../app/routes/recipies.server.routes.js')(app);
     app.use(express.static('./public'));
 
     return app;

@@ -1,15 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
-
-  gtag('config', 'UA-110799615-2');
-</script>
 	<meta charset="UTF-8">
 	<title>The Baking Room</title>
 	<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css" />
@@ -32,7 +23,7 @@
 <body>
 	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 	<header id="home" class="header">
-		
+
 		<div class="main_menu_bg navbar-fixed-top wow slideInDown" data-wow-duration="1s">
 			<div class="container">
 				<div class="row">
@@ -64,13 +55,13 @@
 							<li><a href="#order_online">Order Online</a></li>
 							<li><a href="#footer">Contact Us</a></li>
 							<% if ( user ) { %>
-							<li><a href="#">Hello <%= user %></a></li> 
+							<li><a href="#">Hello <%= user %></a></li>
 							<li><a href="/logout">Logout</a></li>
 							<% } else { %>
 							<li><a href="/login">Login</a></li>
 							<li><a href="/register">SignUp</a></li>
 							<% } %>
-							
+
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
@@ -184,7 +175,7 @@
 						</div>
 					</div>
 					<% } %>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</section>
@@ -198,26 +189,13 @@
 						<div class="separetor"></div>
 					</div>
 
-					<div class="menus_top_menu text-center wow slideInDown" data-wow-duration="1.5s">
-						<ul>
-							<li class="active"><a href="">Starters</a></li>
-							<li><a href="">Main Dishes</a></li>
-							<li><a href="">Desserts</a></li>
-							<li><a href="">Drinks</a></li>
-						</ul>
-					</div>
-
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_menus wow slideInLeft" data-wow-duration="1.5s">
 							<ul>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-
+								<li> CHOCOLATE MOUSSE CAKE................................................... Rs. 900 </li>
+								<li> MIXED BERRY CHEESECAKE.................................................. Rs. 850 </li>
+								<li> BANOFFEE PIE & CREAM.................................................... Rs. 900 </li>
+								<li> APPLE CRUMBLE........................................................... Rs. 1000 </li>
 							</ul>
 						</div>
 					</div>
@@ -225,14 +203,10 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_menus wow slideInRight" data-wow-duration="1.5s">
 							<ul>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-								<li> SMOKED RICOTTA TERRINE   ........................................................... 12$ <span> ricotta, shallots, cheddar, capers</span></li>
-
+								<li> MISSIPPI MUDD PIE........................................................ Rs. 1100 </li>
+								<li> IRISH CREAM CAKE.......................................................... Rs. 950 </li>
+								<li> STRABBERY WAFFLES........................................................ Rs. 200 </li>
+								<li> CARAMEL FUDGE CAKE...................................................... Rs. 950 </li>
 							</ul>
 						</div>
 					</div>
@@ -265,7 +239,7 @@
 					<div class="col-md-3">
 						<div class="sinle_features wow slideInUp" data-wow-duration="2s">
 							<div class="form_btn_area text-center">
-								<a href="" class="btn">Browse</a>
+								<a href="/ecomm" class="btn">Browse</a>
 							</div>
 						</div>
 					</div>
@@ -306,48 +280,10 @@
 								</div>
 							</div>
 
-
-
-							<div class="contact_form_area">
-								<h3>Contact form</h3>
-								<form action="#" id="formid">
-									<div class="row">
-										<div class="col-sm-6 col-xs-6">
-											<div class="form-group">
-												<input type="text" class="form-control" name="name" placeholder="First Name">
-											</div>
-										</div>
-
-										<div class="col-sm-6 col-xs-6">
-											<div class="form-group">
-												<input type="text" class="form-control" name="name" placeholder="Last Name">
-											</div>
-										</div>
-
-										<div class="col-sm-6 col-xs-6">
-											<div class="form-group">
-												<input type="email" class="form-control" name="email" placeholder="Email">
-											</div>
-										</div>
-										<div class="col-sm-6 col-xs-6">
-											<div class="form-group">
-												<input type="tel" class="form-control" name="Contact Number" placeholder="Contact Number">
-											</div>
-										</div>
-									</div>
-
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group">
-												<textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-											</div>
-										</div>
-
-										<div class="form_btn_area text-center">
-											<a href="" class="btn">Send</a>
-										</div>
-									</div>
-								</form>
+							<div class="sinle_features wow slideInUp" data-wow-duration="2s">
+								<div class="form_btn_area text-center">
+									<a href="https://thebakingroom-188121.firebaseapp.com/" class="btn" target="_blank">Join the live Chat!</a>
+								</div>
 							</div>
 
 						</div>
