@@ -7,8 +7,7 @@ exports.render = function(req, res) {
 	        return next(err);
 	    }
 	    else{
-	    	console.log(prods);
-	      	res.render('index', {
+	    	res.render('index', {
     		title: 'The Baking Room',
     		list:prods,
     		user: req.user ? req.user.username : ''
