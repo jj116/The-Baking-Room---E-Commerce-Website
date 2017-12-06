@@ -13,7 +13,7 @@
 html,
 body {
     height: 100%;
-	background: url(images/r.jpg) no-repeat center center fixed; 
+	background: url(images\r.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,36 +45,36 @@ body {
       <form class="login-form" action="/register" method="post">
         <div class="row">
           <div class="input-field col s12 center">
-            <img src="images/picture1.png" style="width=25%;" alt="" class="responsive-img valign profile-image-login">
+            <img src="images\picture1.png" style="width=25%;" alt="" class="responsive-img valign profile-image-login">
             <p class="center login-form-text">Patisserie and more!</p>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="username" name="username" type="text" class="validate">
-            <label for="username" class="center-align">Username</label>
+             <input id="username" name="username" type="text" class="validate" placeholder="Username" onblur="this.placeholder = 'Username'" />
+            <label for="username" class="center-align" placeholder="Username"></label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
-            <input id="name" name="name" type="text" class="validate">
-            <label for="name" class="center-align">Name</label>
+            <input id="name" name="name" type="text" class="validate" placeholder="Name" onblur="this.placeholder = 'Name'">
+            <label for="name" class="center-align" placeholder="Name"></label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-communication-email prefix"></i>
-            <input id="email" name="email" type="email" class="validate">
-            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email" class="validate" onblur="this.placeholder = 'Email'">
+            <label for="email"></label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" name="password" type="password">
-            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" onblur="this.placeholder = 'Password'">
+            <label for="password" placeholder="Password"></label>
           </div>
         </div>
         <div class="row">
