@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css" />
 	<link rel="stylesheet" href="css/owl-carousel/owl.transitions.css">
-	
+
 
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
@@ -238,134 +238,32 @@
 				background-size: cover;">
 
 	</section><!-- End of Abouts Section -->
+  <% for(var i=0; i < list.length ; i++) { %>
 	<div>
     <div class="card-container" style="float:left; margin-left: 70px;">
 	  <div class="card u-clearfix">
     <div class="wrapper">
     <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+      <img src='<%= list[i].Imagee %>' height="420" width="327">
     </div>
     <div class="product-info">
       <div class="product-text">
-        <h1>Harvest Vase</h1>
+        <h1><%= list[i].pname %></h1>
         <h2>by studio and friends</h2>
-        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+        <p><%= list[i].pdsec %></p>
       </div>
       <div class="product-price-btn">
-        <p><span>78</span>$</p>
+        <p><span><%= list[i].cost %></span>$</p>
         <button type="button">buy now</button>
       </div>
     </div>
     </div>
   </div>
   </div>
-  <div class="card-container" style="float:left; margin-left: 70px;">
-  <div class="card u-clearfix">
-  <div class="wrapper">
-    <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>Harvest Vase</h1>
-        <h2>by studio and friends</h2>
-        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-      </div>
-      <div class="product-price-btn">
-        <p><span>78</span>$</p>
-        <button type="button">buy now</button>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 
-</div>
-<div>
-  <div class="card-container" style="float:left; margin-left: 70px;">
-  <div class="card u-clearfix">
-  <div class="wrapper">
-    <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>Harvest Vase</h1>
-        <h2>by studio and friends</h2>
-        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-      </div>
-      <div class="product-price-btn">
-        <p><span>78</span>$</p>
-        <button type="button">buy now</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="card-container" style="float:left; margin-left: 70px;">
-<div class="card u-clearfix">
-  <div class="wrapper">
-      <div class="product-img">
-        <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-      </div>
-      <div class="product-info">
-        <div class="product-text">
-          <h1>Harvest Vase</h1>
-          <h2>by studio and friends</h2>
-          <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-        </div>
-        <div class="product-price-btn">
-          <p><span>78</span>$</p>
-          <button type="button">buy now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<% } %>
 
-<div>
-  <div class="card-container" style="float:left; margin-left: 70px;">
-  <div class="card u-clearfix">
-  <div class="wrapper">
-    <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-    </div>
-    <div class="product-info">
-      <div class="product-text">
-        <h1>Harvest Vase</h1>
-        <h2>by studio and friends</h2>
-        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-      </div>
-      <div class="product-price-btn">
-        <p><span>78</span>$</p>
-        <button type="button">buy now</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="card-container" style="float:left; margin-left: 70px;">
-<div class="card u-clearfix">
-  <div class="wrapper">
-      <div class="product-img">
-        <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-      </div>
-      <div class="product-info">
-        <div class="product-text">
-          <h1>Harvest Vase</h1>
-          <h2>by studio and friends</h2>
-          <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-        </div>
-        <div class="product-price-btn">
-          <p><span>78</span>$</p>
-          <button type="button">buy now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
 <!-- STRAT SCROLL TO TOP -->
 
 <hr>
