@@ -9,7 +9,7 @@ exports.render = function(req, res) {
 	    	return next(err);
 	    }
 	    else{
-	    	console.log(prods);
+	    	// console.log(prods);
 	    	for(var i=0; i<prods.length; i++){
 	    		// console.log(prods[i].pid.map(String));
 	    		tli.push(prods[i].pid.map(String));
@@ -18,24 +18,18 @@ exports.render = function(req, res) {
 	    	lix = fi(tli, 0.5, true);
 	    	lix = lix[0];
 	    	lix = lix.map(Number);
-	    	console.log(lix);
+	    	// console.log(lix);
 
-	    	for(var xk=0 ; xk < lix.length ; xk++){
-	    		Product.find().where('_pid').in(lix).exec(function(err,records){
-	    			if(err)
-	    				return next(err);
-	    			else{
-	    				console.log(records);
-	    				res.render('index', {
-    					title: 'The Baking Room',
-    					list:records,
-    					user: req.user ? req.user.username : ''
-    					});
-	    			}
-	    		});
+	    	Product.find({
+	    		'_pid':{ $in:lix }
+	    	}, function(err, records){
+	    		res.render('index', {
+    				title: 'The Baking Room',
+    				list:records,
+    				user: req.user ? req.user.username : ''
+    			});
+	    	});
+	    		
 	    	}
-
-	    	
-	    }
 	});
 };
