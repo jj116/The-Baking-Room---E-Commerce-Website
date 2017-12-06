@@ -47,6 +47,7 @@
 								<li class="active"><a><h5 style="font-family: 'Shadows Into Light', cursive;font-size: 30px;">The Baking Room</h5></a></li>
 							</ul>
 						  <ul class="nav navbar-nav navbar-right">
+
 							<li class="active"><a href="#home">Home</a></li>
 							<li><a href="#features">About Us</a></li>
 							<li><a href="#special">Featuring this month</a></li>
@@ -157,144 +158,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="head_title text-center wow slideInLeft" data-wow-duration="1.5s">
-					<h2>This month specials</h2>
+					<h2>Today's Specials</h2>
 					<div class="separetor"></div>
 				</div>
 				<div class="main_special text-center wow slideInUp" data-wow-duration="3s">
-
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
+					<% for(var i=0; i < 4 ; i++) { %>
+					<div class="col-md-3 col-sm-3 col-xs-6 single_special" align="center">
 						<div class="single_special_img">
-							<img src="images/s1.png" alt="" />
+							<img src='<%= list[i].Imagee %>' alt="" height='260' width='260' />
 							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
+								<h3><%= list[i].pname %></h3>
 								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
+								<p><%= list[i].pdsec %></p>
+								<p><%= list[i].cost %></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p2.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p3.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p4.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p5.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p6.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p6.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p5.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p4.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p3.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/p2.jpg" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6 single_special">
-						<div class="single_special_img">
-							<img src="images/s1.png" alt="" />
-							<div class="single_special_overlay text-center">
-								<h3>Greens fava</h3>
-								<div class="overlay_separetor"></div>
-								<p>Lorem ipsum dolor sit Pellentesque vel enim a</p>
-								<p>17$</p>
-							</div>
-						</div>
-					</div>
-				</div>
+					<% } %>
+				</div>				
 			</div>
 		</div>
 	</section>
