@@ -1,0 +1,7 @@
+{
+  "name": "The Baking Room",
+  "description": "A Food Store",
+  "repository": "git@github.com:jj116/The-Baking-Room---E-Commerce-Website.git",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

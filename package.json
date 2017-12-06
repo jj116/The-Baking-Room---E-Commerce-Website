@@ -1,0 +1,39 @@
+{
+  "name": "thebakingroom",
+  "version": "1.0.0",
+  "description": "The Food E-commerce",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.13.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jj116/The-Baking-Room---E-Commerce-Website.git"
+  },
+  "keywords": [
+    "ME_N",
+    "Heroku"
+  ],
+  "author": "Sushant Bansal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jj116/The-Baking-Room---E-Commerce-Website/issues"
+  },
+  "homepage": "https://github.com/jj116/The-Baking-Room---E-Commerce-Website#readme"
+}
