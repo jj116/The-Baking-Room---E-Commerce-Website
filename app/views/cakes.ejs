@@ -254,7 +254,7 @@
       </div>
       <div class="product-price-btn">
         <p><span><%= list[i].cost %></span>$</p>
-        <button type="button">buy now</button>
+        <button id="subm" onclick="atc(<%= list[i]._pid %>)"> Buy Now </button>
       </div>
     </div>
     </div>
@@ -336,6 +336,11 @@
 </div>
 
 <script type="text/javascript" src="js/jquery/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+	var atc = function(id){
+		$.post('/cart', {'_pid': id});
+	}
+</script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>

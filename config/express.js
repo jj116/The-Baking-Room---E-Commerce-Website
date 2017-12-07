@@ -3,15 +3,17 @@ var config = require('./config'),
 	bodyParser = require('body-parser'),
 	passport = require('passport'),
     flash = require('connect-flash'),
-    session = require('express-session');;
+    session = require('express-session')
+    cookieParser = require('cookie-parser');
 
 
 module.exports = function() {
     var app = express();
     app.use(bodyParser.urlencoded({
         extended: true
-    }));
+}));
 
+    app.use(cookieParser());
     app.use(bodyParser.json());
 
     app.use(session({
@@ -35,6 +37,7 @@ module.exports = function() {
     require('../app/routes/cakes.server.routes.js')(app);
     require('../app/routes/recipies.server.routes.js')(app);
     require('../app/routes/glob.cart.route.js')(app);
+    require('../app/routes/del.cart.route.js')(app);
     
     app.use(express.static('./public'));
 

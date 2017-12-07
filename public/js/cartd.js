@@ -67,10 +67,17 @@ function updateQuantity(quantityInput)
 /* Remove item from cart */
 function removeItem(removeButton)
 {
+  
   /* Remove row from DOM and recalc cart total */
   var productRow = $(removeButton).parent().parent();
+  var pid = $(removeButton).closest('.product').children('.hidden')[0];
+  // console.log(pid);
+  var t = pid.innerHTML;
   productRow.slideUp(fadeTime, function() {
+    // console.log(t);
+    $.post('/cartdel', {'dpid': t});
     productRow.remove();
+
     recalculateCart();
   });
 }

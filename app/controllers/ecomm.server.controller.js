@@ -1,6 +1,7 @@
 exports.render = function(req, res) {
-	    	res.render('ecomm', {
-    		title: 'The Baking Room',
-    		user: req.user ? req.user.username : ''
-    		});
+	var currCart = req.cookies.CartCookie; 
+	res.render('ecomm', {
+		title: 'The Baking Room',
+		user: req.user ? req.user.username : ''
+	});
 };
